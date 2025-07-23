@@ -23,7 +23,7 @@ for i in range(1, 101):
         "t": "1752658935151"
     }
     result = subprocess.run(
-        ["node", "index.js"],
+        ["node", "source.js"],
         capture_output=True,
         text=True
     )
