@@ -6,6 +6,7 @@ Object.defineProperties(globalThis, {
 })
 
 window = globalThis;
+window.logger = console.log
 delete global;
 delete Buffer;
 // delete process;
@@ -245,6 +246,8 @@ sessionStorage = {
 addEventListener = function () { }
 window.open = function () { }
 window.XMLHttpRequest = function () { }
+// setTimeout = function () { }
+// setInterval = function () { }
 require('./source.js');
 
 (function () {
@@ -252,7 +255,7 @@ require('./source.js');
     Object.defineProperty(document, 'cookie', {
         set: function (val) {
             if (val.indexOf('w_tsfp') != -1) {
-                console.log('w_tsfp:',val.split('=')[1].split(';')[0]);
+                window.logger('w_tsfp:',val.split('=')[1].split(';')[0]);
                 process.exit(0);
             }
             cookieTemp = val;
