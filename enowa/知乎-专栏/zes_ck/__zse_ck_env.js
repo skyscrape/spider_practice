@@ -355,7 +355,7 @@ function proxy(obj, objname, type) {
 // location = proxy(location, 'location');
 
 
-require_('./index.js');
+require_('./w.js');
 (function () {
     'use strict';
     var cookieTemp = '';

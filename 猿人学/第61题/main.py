@@ -15,7 +15,7 @@ async def process_page(websocket, i):
         f.write(js_code)
 
     # 2. 执行 Node.js 脚本
-    result = subprocess.run(["node", "index.js"], capture_output=True, text=True)
+    result = subprocess.run(["node", "w.js"], capture_output=True, text=True)
 
     if result.returncode != 0:
         print(f"[!] 第{i}页 Node 脚本执行失败：{result.stderr.strip()}")

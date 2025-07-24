@@ -34,7 +34,7 @@ print(response.text)
 # with open('./content.js', 'w', encoding='utf-8') as f:
 #     f.write(contentJs)
 #
-# with open('./index.js', 'w', encoding='utf-8') as f:
+# with open('./w.js', 'w', encoding='utf-8') as f:
 #     f.write(requests.get(jsUrl).text)
 #
 # cookies = {
