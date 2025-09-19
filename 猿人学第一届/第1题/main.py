@@ -29,7 +29,7 @@ def requests_url(page, m):
         "x-requested-with": "XMLHttpRequest"
     }
     cookies = {
-        "sessionid": "7yzilodu94rlst7d78ppe8sw0nn07s8r",
+        "sessionid": "",
     }
     url = "https://match.yuanrenxue.cn/api/match/1"
     params = {
