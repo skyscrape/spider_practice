@@ -11,7 +11,7 @@ session.headers = {
     'Referer': 'https://match.yuanrenxue.cn/match/3',
     'Accept-Encoding': 'gzip, deflate, br',
     'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
-    'Cookie': "sessionid=gca1b1ftj48s5vedwjnq95dcr3zgrm2y;"
+    'Cookie': "sessionid="
 }
 
 coll = []
