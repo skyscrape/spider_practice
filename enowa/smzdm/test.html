@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" name="viewport" id="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="//img1.t.sinajs.cn/t4/appstyle/helpV41/css/csc_h5/index.css?version=202507291532">
+
+
+
+    <script type="text/javascript" charset="UTF-8" src="//js.t.sinajs.cn/mobile/apps/zhaoren/kefuv2/jquery-1.4.2.min.js?v=202507291532"></script>
+    <script src="//img1.t.sinajs.cn/t4/appstyle/helpV41/script/h5/ios.js?version=202507291532"></script>
+    <script type="text/javascript">
+        $(function(){
+            function bridgeReady() {
+                window.WeiboJSBridge.invoke("setImmersiveStyle",{'immersive':0,'topNaviTransparent':0,'itemColor':0} , function(params, success, code) {
+                    opts.callback && opts.callback(params, success, code);
+                });
+                window.WeiboJSBridge.invoke("getAid", {}, function (params, success, code) {
+                    var all_selfService =  document.getElementById("all_selfService");
+                    var  urlSearchParams = new URLSearchParams(window.location.search);
+                    var  source = urlSearchParams.get('cs_source');
+                    document.getElementById("cs_source").value = source;
+                    if (all_selfService){
+                        all_selfService.dataset.url ='/selfservice?aid='+params.aid+'&cs_source='+source;
+                    }
+                });
+            }
+            if (window.WeiboJSBridge) {
+                bridgeReady();
+            } else {
+                document.addEventListener('WeiboJSBridgeReady', function () {
+                    bridgeReady();
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var $CONFIG = {};
+        $CONFIG['islogin']='0';
+        $CONFIG['skin']='';
+        $CONFIG['background']='';
+        $CONFIG['scheme']='';
+        $CONFIG['colors_type']='0';
+        $CONFIG['$webim']='0';
+        $CONFIG['timeDiff']=(new Date() - 1753774327000);
+        $CONFIG['servertime']='1753774327';
+        $CONFIG['location']='';
+        $CONFIG['pageid']='';
+        $CONFIG['miyou']='0';
+        $CONFIG['brand']='0';
+        $CONFIG['bigpipe']='false';
+        $CONFIG['bpType']='main';
+        $CONFIG['jsPath']='';
+        $CONFIG['cssPath']='';
+        $CONFIG['imgPath']='';
+        $CONFIG['mJsPath']=["https:\/\/js{n}.t.sinajs.cn\/t5\/",1,2];
+        $CONFIG['mCssPath']=["https:\/\/img{n}.t.sinajs.cn\/t5\/",1,2];
+        $CONFIG['version']='202507291532';
+    </script>
+</head>
+<body>
+<article class="main_content">
+    <section class="con_ad">
+        <div id="plc_top">
+        </div>
+        <div  id="plc_frame">
+            <div>
+                <div>
+                </div>
+                <div id="plc_main"><div>
+                    <div id="pl_content_faqdetail"><div class="csc_describe" id="faqdetail_height">
+                        <!--<h3>微博登陆后提示已锁定部分功能怎么办？</h3>-->
+                        <h3>实时热搜榜的上榜规则</h3>
+                        <dl>
+                            <dd>
+                                <br />
+                                <span style="font-size:14px;"><span style="color:#ff0000;">微博实时热搜榜每1分钟更新一次，按照短时间内的搜索量进行排序。</span>短时间内搜索量非常高、上升趋势非常快的关键词都有可能进榜。同时，对参与搜索的用户质量（多方质量维度综合判定）会有一定要求，另外，为了防止恶意刷榜行为，存在监测机制。<br />
+<br />
+<br />
+更新时间：2024年10月18日</span>        </dd>
+                        </dl>
+                        <div class="look_all" style="display:none">
+                            <div class="line_gradient">
+
+                            </div>
+                            <div class="look_allmore">
+                                <span><i>查看全文</i><i class="m-font m-font-arrow-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="csc_card">
+                            <div class="card m-panel card42">
+                                <a href="javascript:;">
+                                    <div class="card-wrap">
+                                        <div class="card-main">
+                                            <div class="m-box">
+                                                <div class="box-left m-box-col m-box-center-a">
+                                                    <span class="link-text"><span class="main-link">相关问题</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="csc_txt">
+                                <div class="csc_txt_c">
+                                    <ul>
+                                        <li data-class="detail-re" data-url="/faqdetail?id=15351"><span class="m-span">话题主持人如何推荐用户及微博</span>
+                                            <aside><i class="m-font m-font-arrow-right"></i></aside>
+                                        </li>
+                                        <li data-class="detail-re" data-url="/faqdetail?id=16083"><span class="m-span">热门微博“小时榜”的上榜规则</span>
+                                            <aside><i class="m-font m-font-arrow-right"></i></aside>
+                                        </li>
+                                        <li data-class="detail-re" data-url="/faqdetail?id=20882"><span class="m-span">为什么我的微博不在实时（话题）中显示</span>
+                                            <aside><i class="m-font m-font-arrow-right"></i></aside>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csc_btn">
+                            <div class="card m-panel card17 m-col-2">
+                                <div class="card-wrap">
+                                    <div class="card-main">
+                                        <a class="m-item-box" href="javascript:;" data-type="solvenew" type="1" data-id="20020">
+                                            <div class="m-diy-btn m-box-col m-box-center m-box-center-a"><i class="m-icon m-icon-like"></i>
+                                                <h4>有用</h4>
+                                            </div>
+                                        </a><a class="m-item-box" href="javascript:;" data-type="solvenew" type="2" data-id="20020">
+                                        <div class="m-diy-btn m-box-col m-box-center m-box-center-a"><i class="m-icon m-icon-nolike"></i>
+                                            <h4>没用</h4>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="uid" value="">
+                        <input type="hidden" id="cs_source" value="0">
+                        <article class="textarea_cont" style="display:none">
+                            <section class="add_border_bto">
+                                <label class="m-textarea">
+                                    <textarea id="box" placeholder="请输入反馈内容"></textarea>
+                                    <input type="hidden" id="type" value="">
+                                    <input type="hidden" id="id" value="20020">
+                                    <input type="hidden" id="title" value="实时热搜榜的上榜规则">
+                                </label>
+                                <div class="m-button-box">
+                                    </a><b class="sub-link" id="real_time">0</b><b class="sub-link">/</b><b class="sub-link">300</b>
+                                </div>
+                            </section>
+                            <div class="btn_box">
+                                <a href="javascript:;" style="display:none" class="m-btn m-btn-block m-btn-orange" id="orangefeed" ontouchstart="">提交反馈</a>
+                                <!-- 禁用状态按钮 start -->
+                                <a href="javascript:;" class="m-btn m-btn-block m-btn-orange btn_dis" id="orangeend" ontouchstart="">提交反馈</a>
+                                <!-- 禁用状态按钮 end -->
+                            </div>
+                        </article>
+                        <div class="m-popup" style="display: none" id="point">
+                            <div class="m-box m-box-dir m-box-center">
+                                <header>
+                                    <i class="m-font m-font-line-check"></i>
+                                </header>
+                                <h3>感谢您的反馈</h3>
+                            </div>
+                        </div>
+                        <div class="m-popup" style="display: none" id="empty">
+                            <div class="m-box m-box-dir m-box-center">
+                                <header>
+                                    <i class="m-font m-font-warn"></i>
+                                </header>
+                                <h3>请输入您要反馈的问题</h3>
+                            </div>
+                        </div>
+                        <!-- 反馈内容选项 start -->
+                        <div class="mask" data-type='feed' style="display: none">
+                            <div class="top_gray" style="widht:50%;height:50%;"></div>
+                            <div class="feedback an_active">
+                                <div class="m-actionsheet an_down">
+                                    <div class="m-actionsheet-list">
+                                        <p class="ask_tittle">
+                                            请反馈您的问题，帮助我们优化内容
+                                            <i class="m-font m-font-close" id="close"></i>
+                                        </p>
+                                        <input type="hidden" id="title" value="实时热搜榜的上榜规则">
+                                        <input type="hidden" id="faqid" value="20020">
+                                        <a href="javascript:;" ontouchstart="" type="20020" data-id="1" data-type='feedback' class="m-actionsheet-item">太复杂，没看懂</a>
+                                        <a href="javascript:;" ontouchstart="" type="20020" data-id="2" data-type='feedback' class="m-actionsheet-item">内容有错误</a>
+                                        <a href="javascript:;" ontouchstart="" type="20020" data-id="3" data-type='feedback' class="m-actionsheet-item">操作后我未能解决问题</a>
+                                        <a href="javascript:;" ontouchstart="" type="20020" data-id="4" data-type='feedback' class="m-actionsheet-item">对功能不满意</a>
+                                        <a href="javascript:;" ontouchstart="" type="20020" data-id="5" data-type='feedback' class="m-actionsheet-item">其他问题</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript" charset="UTF-8" src="//js.t.sinajs.cn/mobile/apps/zhaoren/kefuv2/mobile/faqdetail.js?v=202507291532"></script></div>
+                </div>
+
+                    <div>
+                    </div></div>
+            </div>
+
+        </div>
+        <div id="plc_bot" ></div>
+    </section>
+</article
+
+</body>
+<!--        <script>
+                    </script>-->
+<script type="text/javascript" src="//js.t.sinajs.cn/t6/home/js/pl/top/topInit.js?version=202507291532"></script>
+<script type="text/javascript">
+    WBtopGlobal && WBtopGlobal.init(
+        {
+            "name"    : $CONFIG['nick'],
+            "onick"   : $CONFIG['nick'],
+            "uid"     : $CONFIG['uid'],
+            "islogin" : $CONFIG['uid'] ? 1 : 0,
+            "pid"     : 1,
+            "lang"    :"zh-cn",
+            "backurl" : "//me.weibo.com"
+        });
+</script>
+<script type="text/javascript" charset="UTF-8" src="//js.t.sinajs.cn/mobile/apps/zhaoren/kefuv2/mobile/service.js?v=202507291532"></script>
+
+</html>

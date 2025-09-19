@@ -10,12 +10,18 @@ cookies = {
 }
 url = "https://douhot.douyin.com/douhot/v1/calendar/query_list"
 data = {
-    "start_date": 1751212800,
-    "end_date": 1754755200,
+    "start_date": 1754755200,
+    "end_date": 1755100800,
 
 }
 data = json.dumps(data, separators=(',', ':'))
 response = requests.post(url, headers=headers, cookies=cookies, data=data)
+print(response.json())
 
-print(response.text)
-print(response)
+data = response.json()['data']
+event_list = data['event_list']
+#
+# for item in event_list:
+#     print( item['tags'], item['event_ids'])
+
+

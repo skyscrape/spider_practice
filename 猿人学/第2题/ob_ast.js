@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const FILE = 'index.js';   // 你的混淆文件名
+const FILE = 'source.js';   // 你的混淆文件名
 const OUT  = 'index.deob.js';  // 输出文件名
 
 // 读取目标文件

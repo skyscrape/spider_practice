@@ -1,16 +1,18 @@
-# 这是一个示例 Python 脚本。
-
-# 按 ⌃R 执行或将其替换为您的代码。
-# 按 双击 ⇧ 在所有地方搜索类、文件、工具窗口、操作和设置。
+import asyncio
+import time
 
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 ⌘F8 切换断点。
+async def task(name):
+    print(f"{name} 开始")
+    await asyncio.sleep(2)  # 模拟IO操作
+    print(f"{name} 结束")
 
+async def main():
+    current_time = time.time()
+    await asyncio.gather(
+        task("任务1"),
+        task("任务2"),
+    )
+    print(time.time()-current_time)
 
-# 按装订区域中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+asyncio.run(main())

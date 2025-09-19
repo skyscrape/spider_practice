@@ -57,8 +57,7 @@ class SMZDMSpider(object):
 if __name__ == '__main__':
     smzdm = SMZDMSpider()
     # 调用代码
-    urls = ['https://post.smzdm.com/p/a3x2gozk/', 'https://post.smzdm.com/p/226064/',
-            'https://post.smzdm.com/p/a9677o6o/']
+    urls = ['https://post.m.smzdm.com/p/agw9e9o6']
 
     for url in urls:
         smzdm.get_smzdm_content( url)

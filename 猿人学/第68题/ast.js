@@ -1,12 +1,12 @@
 // deobf.js
 // 用法：在和 w.js 同目录下运行 `node deobf.js`
-// 会生成和覆盖 index.js，所有算式都被算成了纯数字。
+// 会生成和覆盖 source.js，所有算式都被算成了纯数字。
 
 const fs   = require('fs');
 const path = require('path');
 
 const INPUT  = path.join(__dirname, 'w.js');
-const OUTPUT = path.join(__dirname, 'index.js');
+const OUTPUT = path.join(__dirname, 'source.js');
 
 let code = fs.readFileSync(INPUT, 'utf8');
 

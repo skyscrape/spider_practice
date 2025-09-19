@@ -15,16 +15,16 @@ json_data = {
     'date_window': 24,
     'sub_type': 2001,
     'tag_version': 'v2',
-    # 'tags': [
-    #     {
-    #         'value': 628,
-    #         'children': [
-    #             {
-    #                 'value': 62808,
-    #             },
-    #         ],
-    #     },
-    # ],
+    'tags': [
+        {
+            'value': 628,
+            'children': [
+                {
+                    'value': 62808,
+                },
+            ],
+        },
+    ],
 }
 
 response = requests.post(
