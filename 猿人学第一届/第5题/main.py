@@ -15,7 +15,7 @@ def encrypt_yrx5():
         }
         cookies = {
             # 填入自己的 sessionid
-            "sessionid": "gca1b1ftj48s5vedwjnq95dcr3zgrm2y",
+            "sessionid": "",
             "m": encrypt_params['cookie_m'],
             "RM4hZBv0dDon443M": encrypt_params['cookie_rm4']
         }
