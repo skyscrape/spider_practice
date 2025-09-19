@@ -30,7 +30,7 @@ def get_url_requests(page, m):
         "x-requested-with": "XMLHttpRequest"
     }
     cookies = {
-        "sessionid": "7yzilodu94rlst7d78ppe8sw0nn07s8r",
+        "sessionid": "",
         "Hm_lvt_434c501fe98c1a8ec74b813751d4e3e3": "1757577115",
         "HMACCOUNT": "9C5D5C4C24D2D864",
         "Hm_lpvt_434c501fe98c1a8ec74b813751d4e3e3": "1757577135"
